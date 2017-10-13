@@ -16,6 +16,15 @@ $(document).ready(function() {
 		}
 	});
 
+	$("#btn-user").click(function(e) {
+		e.preventDefault();
+		$(".navegation").css({"width": "0%", "background": "rgba(0, 0, 0, .0)"});
+		$(".navegation .menu").css({"left": "-300px"});
+		$("#btn-menu").removeClass("fa-times");
+		$("#btn-menu").addClass("fa-bars");
+		$(".submenu").css({"left": "-300px"});
+	});
+
 	//Para mostrar los submenus
 	$(".navegation .menu > .item-submenu a").click(function() {
 		var positionMenu = $(this).parent().attr("submenu");
