@@ -15,7 +15,7 @@ $(document).ready(function() {
 			$(".submenu").css({"left": "-300px"});
 		}
 	});
-
+	//Para ocultar el menu cuando demos click en el boton de usuario
 	$("#btn-user").click(function(e) {
 		e.preventDefault();
 		$(".navegation").css({"width": "0%", "background": "rgba(0, 0, 0, .0)"});
