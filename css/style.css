@@ -14,7 +14,11 @@ header {
 	width: 100%;
 	top: 0;
 	left: 0;
-	background: #0747A6;
+	background: -webkit-linear-gradient(left, #2092bd, #4bc5d6); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(left, #2092bd, #4bc5d6); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(left, #2092bd, #4bc5d6); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(left, #2092bd, #4bc5d6); /* Standard syntax */
+	/*background: #0747A6;*/
 	/*background: #344953;*/
 	padding: 15px;
 }
@@ -58,16 +62,16 @@ header .navegation ul {
 	display: inline;
 	height: 100%;
 }
-/*
-.menu-horizontal .item-menu:hover {
-	background: #07357B;
-}*/
 
 .menu-horizontal .item-menu a {
-	color: white;
+	color: #2c40a2;
 	font-size: 30px;
 	cursor: pointer;
 	padding-left: 20px;
+}
+
+.menu-horizontal .item-menu a:hover {
+	color: white;
 }
 
 .main {
@@ -88,7 +92,8 @@ header .navegation ul {
 }
 
 .navegation .menu li.title-menu {
-	background: #5F6F81;
+	background: #82decc;
+	/*background: #5F6F81;*/
 	text-align: center;
 }
 
@@ -128,8 +133,16 @@ header .navegation ul {
 }
 
 .navegation .menu li:hover {
-	background: #0747A6;
-	/*background: #5F6F81;*/
+	background: -webkit-linear-gradient(left, #2092bd, #4bc5d6); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(left, #2092bd, #4bc5d6); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(left, #2092bd, #4bc5d6); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(left, #2092bd, #4bc5d6); /* Standard syntax */
+	/*background: #0747A6;
+	background: #5F6F81;*/
+}
+
+.navegation .menu li.title-menu:hover {
+	background: #82decc;
 }
 
 .navegation .menu li a:hover {
