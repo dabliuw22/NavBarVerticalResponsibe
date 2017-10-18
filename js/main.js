@@ -5,7 +5,7 @@ $(document).ready(function() {
 		if($(this).hasClass("fa-bars")) {
 			$(this).removeClass("fa-bars");
 			$(this).addClass("fa-times");
-			$(".navegation .menu").css({"left": "0px"});
+			$(".navegation .menu").css({"left": "0px", "height": "100%"});
 			$(".navegation").css({"width": "100%", "background": "rgba(0, 0, 0, .3)"});
 		} else {
 			$(this).removeClass("fa-times");

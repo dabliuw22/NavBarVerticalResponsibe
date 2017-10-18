@@ -21,13 +21,13 @@ header {
 	background: -ms-linear-background(left, #2092bd, #4bc5d6); /* IE 10 */
 	/*background: #0747A6;*/
 	/*background: #344953;*/
-	padding: 10px;
 }
 
 header #btn-menu {
 	font-size: 30px;
 	color: #2c40a2;
-	cursor: pointer;
+	cursor: pointer;	
+	padding-left: 10px;
 }
 
 header #btn-menu:hover {
@@ -57,6 +57,7 @@ header .navegation ul {
 
 .derecho {
 	float: right;
+	margin-right: 10px; 
 }
 
 .menu-horizontal {
@@ -64,7 +65,7 @@ header .navegation ul {
 }
 
 .menu-horizontal li.item-menu {
-	display: inline;
+	display: inline-block;
 	height: 100%;
 }
 
@@ -73,17 +74,51 @@ header .navegation ul {
 	font-size: 30px;
 	cursor: pointer;
 	padding-left: 20px;
+	display: block;
+	padding: 10px;
 }
 
-.menu-horizontal .item-menu a:hover {
+.menu-horizontal .item-menu ul.desplegable {
+	display: none;
+	list-style: none;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	width: auto;
+	background: white;
+}
+
+.menu-horizontal .item-menu ul.desplegable li a {
+	display: block;
+	padding: 10px;
+	border-bottom: 1px solid #C6D0DA;
+	font-size: 20px;
+	font-weight: 200;
+	color: #575D69;
+}
+
+.menu-horizontal .item-menu ul.desplegable li:hover {
+	background: -webkit-linear-gradient(left, #2092bd, #4bc5d6); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(left, #2092bd, #4bc5d6); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(left, #2092bd, #4bc5d6); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(left, #2092bd, #4bc5d6); /* Standard syntax */
+	background: -ms-linear-background(left, #2092bd, #4bc5d6); /* IE 10 */
+}
+
+.menu-horizontal .item-menu ul.desplegable li a:hover {
 	color: white;
+}
+
+.menu-horizontal .item-menu:hover ul.desplegable {
+	display: block;
+	position: absolute;
 }
 
 .main {
 	margin-top: 70px; 
 }
 
-.navegation a {
+header .menu-horizontal a {
 	text-decoration: none;
 }
 
@@ -151,7 +186,7 @@ header .navegation ul {
 	background: #82decc;
 }
 
-.navegation .menu li a:hover {
+header .menu-horizontal a:hover {
 	color: white;
 }
 
